@@ -1,2 +1,9 @@
-package org.uno;public interface Entregable {
+package org.uno;
+
+public interface Entregable extends Comparable {
+    void entregar();
+
+    void devolver();
+
+    boolean isEntregado();
 }
