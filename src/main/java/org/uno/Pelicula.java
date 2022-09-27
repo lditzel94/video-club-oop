@@ -3,19 +3,26 @@ package org.uno;
 public class Pelicula implements Entregable {
     private String titulo;
     private int anio;
-    private boolean entregado = false;
-    private String genero = "no definido";
+    private boolean entregado;
+    private String genero;
     private String director;
 
     public Pelicula() {
+        this.titulo = "";
+        this.anio = 0;
+        this.entregado = false;
+        this.genero = "no definido";
+        this.director = "";
     }
 
     public Pelicula( String titulo, String director ) {
+        this();
         this.titulo = titulo;
         this.director = director;
     }
 
     public Pelicula( String titulo, int anio, String genero, String director ) {
+        this();
         this.titulo = titulo;
         this.anio = anio;
         this.genero = genero;

@@ -2,20 +2,27 @@ package org.uno;
 
 public class Videojuego implements Entregable {
     private String titulo;
-    private int horasEstimadas = 10;
-    private boolean entregado = false;
+    private int horasEstimadas;
+    private boolean entregado;
     private String genero;
     private String compania;
 
     public Videojuego() {
+        this.titulo = "";
+        this.horasEstimadas = 10;
+        this.entregado = false;
+        this.genero = "";
+        this.compania = "";
     }
 
     public Videojuego( String titulo, int horasEstimadas ) {
+        this();
         this.titulo = titulo;
         this.horasEstimadas = horasEstimadas;
     }
 
     public Videojuego( String titulo, int horasEstimadas, String genero, String compania ) {
+        this();
         this.titulo = titulo;
         this.horasEstimadas = horasEstimadas;
         this.genero = genero;
